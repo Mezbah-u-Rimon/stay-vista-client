@@ -3,6 +3,8 @@ import Container from "../../components/Shared/Container";
 import { useEffect, useState } from "react";
 import Loader from "../../components/Shared/Loader";
 import { Helmet } from "react-helmet-async";
+import Header from "../../components/RoomDetails/Header";
+import RoomInfo from "../../components/RoomDetails/RoomInfo";
 
 
 const RoomDetails = () => {
@@ -33,10 +35,10 @@ const RoomDetails = () => {
             <div className="">
                 <div className="flex flex-col gap-6">
                     <div>
-                        {/* header */}
+                        <Header room={room}></Header>
                     </div>
                     <div>
-                        {/* room info */}
+                        <RoomInfo room={room}></RoomInfo>
                     </div>
                     {/* calender */}
                 </div>
