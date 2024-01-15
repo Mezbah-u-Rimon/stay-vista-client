@@ -2,17 +2,28 @@ import { useEffect } from "react";
 import { useState } from "react";
 import Card from "./Card";
 import Container from "../Shared/Container";
+import { useSearchParams } from "react-router-dom";
 
 
 
 const Rooms = () => {
     const [rooms, setRooms] = useState([])
+    const [params, setParams] = useSearchParams()
+    const category = params.get('category')
 
     useEffect(() => {
         fetch("./rooms.json")
             .then(res => res.json())
-            .then(data => setRooms(data))
-    }, [])
+            .then(data => {
+                if (category) {
+                    const filtered = data.filter(room => room.category === category)
+                    setRooms(filtered)
+                }
+                else {
+                    setRooms(data)
+                }
+            })
+    }, [category])
 
     return (
         <Container>
