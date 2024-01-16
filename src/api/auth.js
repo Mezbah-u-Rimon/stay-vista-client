@@ -16,3 +16,9 @@ export const getToken = async email => {
     const { data } = await axiosSecure.post(`/jwt`, email)
     return data
 }
+
+//clear token from server
+export const clearCookie = async () => {
+    const { data } = await axiosSecure.get('/logout')
+    return data
+}
