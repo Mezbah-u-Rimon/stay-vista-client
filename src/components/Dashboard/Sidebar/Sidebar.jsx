@@ -8,24 +8,22 @@ import { GrLogout } from 'react-icons/gr'
 import { FcSettings } from 'react-icons/fc'
 import { AiOutlineBars } from 'react-icons/ai'
 import { BsGraphUp } from 'react-icons/bs'
-import { MdAddHomeWork, MdOutlineMapsHomeWork } from "react-icons/md";
 import MenuItem from './MenuItem'
 
-
 import useAuth from '../../../hooks/useAuth'
-// import useRole from '../../../hooks/useRole'
-// import HostMenu from './HostMenu'
-// import GuestMenu from './GuestMenu'
-// import AdminMenu from './AdminMenu'
+import useRole from '../../../hooks/useRole'
+import GuestMenu from '../GuestMenu'
+import HostMenu from '../HostMenu'
+import AdminMenu from '../AdminMenu'
 
 
 const Sidebar = () => {
     const { logOut } = useAuth()
     const [toggle, setToggle] = useState(false)
     const [isActive, setActive] = useState(false)
-    // const [role] = useRole()
+    const [role] = useRole()
 
-    //   For guest/host menu item toggle button
+    // For guest/host menu item toggle button
     const toggleHandler = event => {
         setToggle(event.target.checked)
     }
@@ -66,31 +64,19 @@ const Sidebar = () => {
                     {/* Nav Items */}
                     <div className='flex flex-col justify-between flex-1 mt-6'>
                         {/* If a user is host */}
-                        {/* {role === 'host' && <ToggleBtn toggleHandler={toggleHandler} />} */}
+                        {role === 'host' && <ToggleBtn toggleHandler={toggleHandler} />}
 
-                        {/* ai line ta kati dite hobe  */}
-                        <ToggleBtn toggleHandler={toggleHandler} />
                         <nav>
                             <MenuItem
                                 icon={BsGraphUp}
                                 label='Statistics'
                                 address='/dashboard'
                             />
-                            <MenuItem
-                                icon={MdAddHomeWork}
-                                label='Add Rooms'
-                                address='add-room'
-                            />
-                            <MenuItem
-                                icon={MdOutlineMapsHomeWork}
-                                label='My Listing'
-                                address='my-listing'
-                            />
 
                             {/* Host Menu Items */}
-                            {/* {role === 'guest' && <GuestMenu />}
+                            {role === 'guest' && <GuestMenu />}
                             {role === 'host' ? toggle ? <HostMenu /> : <GuestMenu /> : ''}
-                            {role === 'admin' && <AdminMenu />} */}
+                            {role === 'admin' && <AdminMenu />}
                         </nav>
                     </div>
                 </div>

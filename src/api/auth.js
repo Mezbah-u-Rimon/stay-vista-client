@@ -7,7 +7,6 @@ export const saveUser = async user => {
         status: 'Verified',
     }
     const { data } = await axiosSecure.put(`/users/${user.email}`, currentUser)
-
     return data
 }
 
@@ -21,4 +20,10 @@ export const getToken = async email => {
 export const clearCookie = async () => {
     const { data } = await axiosSecure.get('/logout')
     return data
+}
+
+//get user role
+export const getRole = async (email) => {
+    const { data } = await axiosSecure(`/user/${email}`)
+    return data?.role
 }
