@@ -9,3 +9,8 @@ export const getSingleRoom = async (id) => {
     const { data } = await axiosSecure(`/rooms/${id}`);
     return data
 }
+
+export const addRoom = async (roomData) => {
+    const { data } = await axiosSecure.post('/rooms', roomData)
+    return data
+}
