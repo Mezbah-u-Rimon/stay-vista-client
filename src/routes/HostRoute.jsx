@@ -6,7 +6,6 @@ import useRole from "../hooks/useRole";
 
 const HostRoute = ({ children }) => {
     const [role, isLoading] = useRole()
-    console.log(role);
 
     if (isLoading) {
         return <Loader />
