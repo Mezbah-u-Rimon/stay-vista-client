@@ -1,5 +1,5 @@
 import { HiOutlineFingerPrint } from "react-icons/hi";
-import MenuItem from "./Sidebar/MenuItem";
+import MenuItem from "../Sidebar/MenuItem";
 
 
 const GuestMenu = () => {

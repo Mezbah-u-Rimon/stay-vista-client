@@ -21,7 +21,6 @@ const CheckoutForm = ({ bookingInfo, closeModal }) => {
         // create payment intent
         if (bookingInfo.price > 0) {
             createPaymentIntent({ price: bookingInfo.price }).then(data => {
-                console.log(data.clientSecret)
                 setClientSecret(data.clientSecret)
             })
         }
@@ -46,7 +45,6 @@ const CheckoutForm = ({ bookingInfo, closeModal }) => {
         })
 
         if (error) {
-            console.log('error', error)
             setCardError(error.message)
         } else {
             setCardError('')
@@ -68,11 +66,8 @@ const CheckoutForm = ({ bookingInfo, closeModal }) => {
             })
 
         if (confirmError) {
-            console.log(confirmError)
             setCardError(confirmError.message)
         }
-
-        console.log('payment intent', paymentIntent)
 
         if (paymentIntent.status === 'succeeded') {
             const paymentInfo = {

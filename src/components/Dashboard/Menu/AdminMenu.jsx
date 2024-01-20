@@ -1,4 +1,4 @@
-import MenuItem from "./Sidebar/MenuItem";
+import MenuItem from "../Sidebar/MenuItem";
 import { GrUserSettings } from "react-icons/gr";
 
 const AdminMenu = () => {

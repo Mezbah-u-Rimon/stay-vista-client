@@ -1,5 +1,5 @@
-import { MdAddHomeWork, MdOutlineMapsHomeWork } from "react-icons/md";
-import MenuItem from "./Sidebar/MenuItem";
+import { MdAddHomeWork, MdOutlineManageHistory, MdOutlineMapsHomeWork } from "react-icons/md";
+import MenuItem from "../Sidebar/MenuItem";
 
 
 const HostMenu = () => {
@@ -14,6 +14,11 @@ const HostMenu = () => {
                 icon={MdOutlineMapsHomeWork}
                 label='My Listing'
                 address='my-listing'
+            />
+            <MenuItem
+                icon={MdOutlineManageHistory}
+                label='Manage Bookings'
+                address='manage-bookings'
             />
         </>
     );
