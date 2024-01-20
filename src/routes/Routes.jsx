@@ -40,13 +40,12 @@ export const router = createBrowserRouter([
     children: [
       {
         path: 'add-room',
-        element: <PrivateRoute> <HostRoute>
-          <AddRoom></AddRoom>
-        </HostRoute> </PrivateRoute>,
+        element: <PrivateRoute> <HostRoute><AddRoom /></HostRoute> </PrivateRoute>
+        ,
       },
       {
         path: 'my-listing',
-        element: <PrivateRoute> <HostRoute> </HostRoute> <MyListings></MyListings> </PrivateRoute>
+        element: <PrivateRoute> <HostRoute> <MyListings /> </HostRoute> </PrivateRoute>
       },
       {
         path: 'manage-users',

@@ -2,12 +2,10 @@ import { Navigate, } from "react-router-dom";
 import Loader from "../components/Shared/Loader";
 import useRole from "../hooks/useRole";
 
-
 const AdminRoute = ({ children }) => {
-    const [role, loading] = useRole()
+    const [role, isLoading] = useRole()
     console.log(role);
-    console.log(loading);
-    if (loading) {
+    if (isLoading) {
         return <Loader></Loader>
     }
 
