@@ -2,7 +2,6 @@ import { useState } from 'react'
 // Components
 import Logo from '../../Shared/Logo'
 import ToggleBtn from '../../Button/ToggleBtn'
-
 // Icons
 import { GrLogout } from 'react-icons/gr'
 import { FcSettings } from 'react-icons/fc'
@@ -12,9 +11,9 @@ import MenuItem from './MenuItem'
 
 import useAuth from '../../../hooks/useAuth'
 import useRole from '../../../hooks/useRole'
-import GuestMenu from '../Menu/GuestMenu'
 import HostMenu from '../Menu/HostMenu'
 import AdminMenu from '../Menu/AdminMenu'
+import GuestMenu from '../Menu/GuestMenu'
 
 
 const Sidebar = () => {
@@ -75,7 +74,7 @@ const Sidebar = () => {
 
                             {/* Host Menu Items */}
                             {role === 'guest' && <GuestMenu />}
-                            {role === 'host' ? toggle ? <HostMenu /> : <GuestMenu /> : ''}
+                            {role === 'host' ? toggle ? <HostMenu /> : < GuestMenu /> : ''}
                             {role === 'admin' && <AdminMenu />}
                         </nav>
                     </div>
