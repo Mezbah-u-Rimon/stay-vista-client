@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 import queryString from "query-string";
 import { useNavigate, useSearchParams } from "react-router-dom";
 

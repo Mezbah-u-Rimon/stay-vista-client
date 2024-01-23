@@ -82,7 +82,6 @@ const Sidebar = () => {
 
                 <div>
                     <hr />
-
                     <MenuItem
                         icon={FcSettings}
                         label='Profile'

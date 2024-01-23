@@ -1,4 +1,3 @@
-
 import MenuItem from "../Sidebar/MenuItem";
 import { GrUserSettings } from "react-icons/gr";
 
