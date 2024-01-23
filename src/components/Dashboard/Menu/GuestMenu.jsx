@@ -22,7 +22,7 @@ const GuestMenu = () => {
         //request to be a host
         try {
             const data = await becomeHost(user?.email);
-            console.log(data);
+
             if (data.modifiedCount > 0) {
                 toast.success("Success!, Please wait for admin confirmation")
             } else {
