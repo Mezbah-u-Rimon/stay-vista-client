@@ -2,7 +2,7 @@ import { Dialog, Transition } from '@headlessui/react'
 import { Fragment } from 'react'
 
 
-const HostModal = ({ modalHandler, closeModal, isOpen, email }) => {
+const HostModal = ({ modalHandler, closeModal, isOpen, }) => {
     return (
         <Transition appear show={isOpen} as={Fragment}>
             <Dialog as='div' className='relative z-10' onClose={closeModal}>
