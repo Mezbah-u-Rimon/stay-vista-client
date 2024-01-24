@@ -33,7 +33,7 @@ const SignUp = () => {
       await updateUserProfile(name, imageData?.data?.display_url)
 
       //save user data in database
-      const dbResponse = await saveUser(result?.user)
+      await saveUser(result?.user)
 
       //result.user.email
       //get token access
@@ -54,7 +54,7 @@ const SignUp = () => {
       const result = await signInWithGoogle();
 
       //save user data in database
-      const dbResponse = await saveUser(result?.user)
+      await saveUser(result?.user)
 
       //result.user.email
       //get token access

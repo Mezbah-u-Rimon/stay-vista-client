@@ -29,7 +29,6 @@ const UpdateRoomModal = ({ setIsEditModalOpen, isOpen, refetch, room, id }) => {
 
     const handleSubmit = event => {
         event.preventDefault()
-        console.log(roomData)
         const updatedData = Object.assign({}, { ...roomData })
         delete updatedData._id
         setLoading(true)

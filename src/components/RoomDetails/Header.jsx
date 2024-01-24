@@ -1,5 +1,3 @@
-/* eslint-disable react/prop-types */
-
 import Heading from "../Shared/Heading/Heading"
 
 const Header = ({ room }) => {

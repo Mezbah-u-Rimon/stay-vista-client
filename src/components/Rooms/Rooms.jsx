@@ -21,7 +21,6 @@ const Rooms = () => {
             .then(data => {
                 if (category) {
                     const filtered = data.filter(room => room.category === category)
-                    console.log(filtered);
                     setRooms(filtered)
 
                 }

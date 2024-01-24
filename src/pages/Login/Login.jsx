@@ -1,7 +1,7 @@
 import { Link, useLocation, useNavigate } from 'react-router-dom'
 import { FcGoogle } from 'react-icons/fc'
 import useAuth from '../../hooks/useAuth';
-import { getToken } from '../../api/auth';
+import { getToken, saveUser } from '../../api/auth';
 import toast from 'react-hot-toast';
 import { TbFidgetSpinner } from 'react-icons/tb';
 
@@ -40,6 +40,9 @@ const Login = () => {
     try {
       // user registration
       const result = await signInWithGoogle();
+
+      //4. save user data in database
+      await saveUser(result?.user)
 
       //result.user.email
       //get token access

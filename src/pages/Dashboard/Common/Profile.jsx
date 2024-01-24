@@ -5,7 +5,7 @@ import useAuth from '../../../hooks/useAuth'
 const Profile = () => {
     const { user } = useAuth()
     const [role] = useRole()
-    console.log(user)
+
     return (
         <div className='flex justify-center items-center h-screen'>
             <Helmet>

@@ -2,9 +2,10 @@ import { Calendar } from 'react-date-range'
 import { FaUserAlt, FaDollarSign } from 'react-icons/fa'
 import { BsFillCartPlusFill, BsFillHouseDoorFill } from 'react-icons/bs'
 import SalesLineChart from './SalesLineChart'
+import { useQuery } from '@tanstack/react-query'
 import { getAdminStat } from '../../../api/utils'
 import Loader from '../../Shared/Loader'
-import { useQuery } from '@tanstack/react-query'
+
 
 const AdminStatistics = () => {
     const { data: statData = [], isLoading } = useQuery({

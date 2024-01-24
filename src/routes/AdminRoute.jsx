@@ -12,9 +12,7 @@ const AdminRoute = ({ children }) => {
     if (role === 'admin') {
         return children
     }
-
     return <Navigate to='/dashboard' />
-
 };
 
 export default AdminRoute;

@@ -7,6 +7,7 @@ import { addRoom } from "../../../api/rooms";
 import toast from "react-hot-toast";
 import { useNavigate } from "react-router-dom";
 
+
 const AddRoom = () => {
     const navigate = useNavigate();
     const { user } = useAuth();
@@ -56,7 +57,7 @@ const AddRoom = () => {
         }
 
         try {
-            const data = await addRoom(roomData)
+            await addRoom(roomData)
             setUploadButtonText("Uploaded!")
             toast.success("Room added successfully!")
             navigate("/dashboard/my-listing")

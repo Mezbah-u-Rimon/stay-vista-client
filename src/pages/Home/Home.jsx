@@ -4,7 +4,6 @@ import Rooms from "../../components/Rooms/Rooms"
 
 const Home = () => {
 
-
   return (
     <div>
       <Helmet>
