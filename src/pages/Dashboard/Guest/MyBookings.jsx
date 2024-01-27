@@ -8,7 +8,7 @@ import EmptyState from '../../../components/Shared/EmptyState'
 
 const MyBookings = () => {
     const { user, loading } = useAuth()
-    const { data: bookings = [], isLoading, } = useQuery({
+    const { data: bookings = [], isLoading, refetch } = useQuery({
         queryKey: ['bookings', user?.email],
         enabled: !loading,
         queryFn: async () => await getBookings(user?.email),
@@ -72,7 +72,7 @@ const MyBookings = () => {
                                     <tbody>
                                         {/* Table Row Data */}
                                         {bookings && bookings?.map(booking => <TableRow key={booking._id}
-                                            booking={booking}>
+                                            booking={booking} refetch={refetch}>
 
                                         </TableRow>)}
                                     </tbody>

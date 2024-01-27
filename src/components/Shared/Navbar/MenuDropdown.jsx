@@ -76,6 +76,7 @@ const MenuDropdown = () => {
             >
               Home
             </Link>
+            <hr />
 
             {user ? (<>
               <Link

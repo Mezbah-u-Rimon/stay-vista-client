@@ -17,6 +17,7 @@ import Profile from '../pages/Dashboard/Common/Profile'
 import MyBookings from '../pages/Dashboard/Guest/MyBookings'
 import ManageBookings from '../pages/Dashboard/Host/ManageBookings'
 import Statistics from '../pages/Dashboard/Common/Statistics'
+import MainHome from '../pages/MainHome/MainHome'
 
 export const router = createBrowserRouter([
   {
@@ -26,6 +27,10 @@ export const router = createBrowserRouter([
     children: [
       {
         path: '/',
+        element: <MainHome />,
+      },
+      {
+        path: '/home',
         element: <Home />,
       },
       {

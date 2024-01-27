@@ -1,10 +1,32 @@
 import { Helmet } from 'react-helmet-async'
 import useRole from '../../../hooks/useRole'
 import useAuth from '../../../hooks/useAuth'
+import toast from 'react-hot-toast'
 
 const Profile = () => {
-    const { user } = useAuth()
+    const { user, resetPassword, updateUserProfile } = useAuth()
     const [role] = useRole()
+
+    const handleResetPassword = async (email) => {
+        resetPassword(email)
+            .then(() => {
+                toast.success("Go to Email box and changes your password")
+            })
+            .catch((error) => {
+                toast.error(error.code);
+                toast.error(error.message);
+
+            })
+    }
+
+    const handleUpdateUserProfile = () => {
+        updateUserProfile(user.displayName, user.photoURL)
+            .then(() => {
+                toast.success("user profile updated")
+            }).catch((err) => {
+                toast.error(err.message)
+            })
+    }
 
     return (
         <div className='flex justify-center items-center h-screen'>
@@ -46,10 +68,10 @@ const Profile = () => {
                             </p>
 
                             <div>
-                                <button className='bg-[#F43F5E] px-10 py-1 rounded-lg text-white cursor-pointer hover:bg-[#af4053] block mb-1'>
+                                <button onClick={handleUpdateUserProfile} className='bg-[#F43F5E] px-10 py-1 rounded-lg text-white cursor-pointer hover:bg-[#af4053] block mb-1'>
                                     Update Profile
                                 </button>
-                                <button className='bg-[#F43F5E] px-7 py-1 rounded-lg text-white cursor-pointer hover:bg-[#af4053]'>
+                                <button onClick={() => handleResetPassword(user.email)} className='bg-[#F43F5E] px-7 py-1 rounded-lg text-white cursor-pointer hover:bg-[#af4053]'>
                                     Change Password
                                 </button>
                             </div>

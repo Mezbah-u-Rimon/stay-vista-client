@@ -6,7 +6,6 @@ import AdminStatistics from '../../../components/Dashboard/Statistics/AdminStati
 
 const Statistics = () => {
     const [role] = useRole()
-    console.log(role)
     return (
         <div>
             <Helmet>

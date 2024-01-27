@@ -1,15 +1,39 @@
 import Container from '../Container'
 import MenuDropdown from './MenuDropdown'
 import Logo from '../Logo'
+import { Link } from 'react-router-dom'
 
 const Navbar = () => {
   return (
-    <div className='fixed w-full bg-white z-10 shadow-sm'>
-      <div className='py-4 border-b-[1px]'>
+    <div className='fixed w-full bg-white z-10 shadow-sm mb-0'>
+      <div className='py-6 border-b-[1px]'>
         <Container>
           <div className='flex flex-row  items-center justify-between gap-3 md:gap-0'>
             {/* Logo */}
             <Logo />
+            {/* menu items */}
+            <div className='flex cursor-pointer justify-center items-center'>
+              <Link
+                to='/'
+                className=' px-4 py-3 hover:bg-neutral-100 transition font-semibold'
+              >
+                Home
+              </Link>
+              <Link
+                to='/home'
+                className='px-4 py-3 hover:bg-neutral-100 transition font-semibold'
+              >
+                Room Details
+              </Link>
+              <Link
+                to='/dashboard'
+                className='px-4 py-3 hover:bg-neutral-100 transition font-semibold'
+              >
+                Dashboard
+              </Link>
+
+            </div>
+
             {/* Dropdown Menu */}
             <MenuDropdown />
           </div>
