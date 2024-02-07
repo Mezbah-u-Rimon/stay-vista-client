@@ -3,7 +3,7 @@ import Tilt from 'react-parallax-tilt';
 
 const About = () => {
     return (
-        <div className="py-20">
+        <div className="pb-20 pt-32">
             <Container>
                 <div className="flex flex-col md:flex-row justify-center gap-10">
                     <div className="space-y-5 flex-1">

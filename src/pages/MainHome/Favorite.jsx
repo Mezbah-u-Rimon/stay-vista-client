@@ -14,14 +14,14 @@ const Favorite = () => {
 
     return (
         <Container>
-            <div className="py-20">
+            <div className="pb-20 pt-20 md:pt-10">
                 <div className="pt-10 md:pt-0 pb-16">
                     <h1 className="md:text-4xl text-3xl font-bold uppercase"> OUR FAVORITE ROOMS  </h1>
                     <h6 className="font-medium text-gray-500 text-lg mt-3"> Check out now our best rooms
                     </h6>
                 </div>
 
-                <div className="grid grid-cols-3 main-card gap-5">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 main-card gap-5">
 
                     <div onMouseEnter={() => setHover(true)} onMouseLeave={() => setHover(false)} className='flex flex-col gap-2 w-full shadow-md rounded-md'>
                         <div className='aspect-square relative overflow-hidden h-[250px] rounded-t-md img-card'

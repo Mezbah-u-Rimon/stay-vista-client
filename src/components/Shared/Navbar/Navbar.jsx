@@ -15,19 +15,19 @@ const Navbar = () => {
             <div className='flex cursor-pointer justify-center items-center'>
               <Link
                 to='/'
-                className=' px-4 py-3 hover:bg-neutral-100 transition font-semibold'
+                className=' px-4 py-3 hover:bg-pink-100 hover:text-rose-500 rounded-lg transition font-semibold'
               >
                 Home
               </Link>
               <Link
                 to='/home'
-                className='px-4 py-3 hover:bg-neutral-100 transition font-semibold'
+                className=' px-4 py-3 hover:bg-pink-100 hover:text-rose-500 rounded-lg transition font-semibold'
               >
                 Room Details
               </Link>
               <Link
                 to='/dashboard'
-                className='px-4 py-3 hover:bg-neutral-100 transition font-semibold'
+                className=' px-4 py-3 hover:bg-pink-100 hover:text-rose-500 rounded-lg transition font-semibold'
               >
                 Dashboard
               </Link>

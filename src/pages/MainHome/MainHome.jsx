@@ -2,6 +2,7 @@ import { Helmet } from 'react-helmet-async';
 import Banner from './Banner';
 import About from './About';
 import Favorite from './Favorite';
+import Services from './Services';
 
 
 const MainHome = () => {
@@ -14,6 +15,7 @@ const MainHome = () => {
             <Banner />
             <About />
             <Favorite />
+            <Services />
         </div>
     );
 };
