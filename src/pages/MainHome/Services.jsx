@@ -12,7 +12,7 @@ const Services = () => {
             <div className="pb-20 pt-10">
                 <div className="pb-10">
                     <h1 className="md:text-4xl text-3xl font-bold uppercase"> OUR AWESOME SERVICES  </h1>
-                    <h6 className="font-medium text-gray-500 text-lg mt-3"> Check out now our best rooms
+                    <h6 className="font-medium text-gray-500 text-lg mt-3"> Check out our awesome services
                     </h6>
                 </div>
                 <Tab.Group>

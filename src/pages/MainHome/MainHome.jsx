@@ -3,6 +3,7 @@ import Banner from './Banner';
 import About from './About';
 import Favorite from './Favorite';
 import Services from './Services';
+import Gallery from './Gallery';
 
 
 const MainHome = () => {
@@ -16,6 +17,7 @@ const MainHome = () => {
             <About />
             <Favorite />
             <Services />
+            <Gallery />
         </div>
     );
 };
