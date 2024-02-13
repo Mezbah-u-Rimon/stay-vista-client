@@ -1,0 +1,42 @@
+[
+    {
+        "title": "Excellent Stay, Great Service!",
+        "value": 5,
+        "review": "I had a fantastic experience at this hotel. The staff were incredibly friendly and accommodating, always willing to go the extra mile to ensure my comfort.  ",
+        "image": "https://images.pexels.com/photos/1181690/pexels-photo-1181690.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "name": "Sarah Johnson",
+        "country_name": "United States"
+    },
+    {
+        "title": "Luxurious Stay in the Heart of the City",
+        "value": 4,
+        "review": "An unforgettable experience! From the elegant decor to the impeccable service, everything about our stay was top-notch. Can't wait to visit again!",
+        "image": "https://media.istockphoto.com/id/1296158947/photo/portrait-of-creative-trendy-black-african-male-designer-laughing.jpg?s=612x612&w=0&k=20&c=1Ws_LSzWjYvegGxHYQkkgVytdpDcnmK0upJyGOzEPcg=",
+        "name": "Michael Smith",
+        "country_name": "United States"
+    },
+    {
+        "title": "Great Value for Money",
+        "value": 5,
+        "review": "I was pleasantly surprised by the quality of this hotel, especially considering the affordable price. The room was clean and spacious, with all the necessary amenities for a comfortable stay.",
+        "image": "https://images.pexels.com/photos/775358/pexels-photo-775358.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "name": "Smith Chen",
+        "country_name": "Australia"
+    },
+    {
+        "title": "Historic Charm with Modern Comforts",
+        "value": 5,
+        "review": "A delightful stay at a charming hotel! Loved the historic ambiance combined with modern amenities. The staff were welcoming and the location was perfect for exploring the city.",
+        "image": "https://images.pexels.com/photos/6853441/pexels-photo-6853441.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "name": "Daniel Rodriguez",
+        "country_name": "United Kingdom"
+    },
+    {
+        "title": "Family-Friendly and Comfortable",
+        "value": 5,
+        "review": "We had a wonderful stay at this hotel with our family. The staff were incredibly welcoming and accommodating, providing extra amenities for our children and even recommending family-friendly activities in the area.",
+        "image": "https://images.pexels.com/photos/13379472/pexels-photo-13379472.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "name": "Jessica Brown",
+        "country_name": "United Arab Emirates"
+    }
+]

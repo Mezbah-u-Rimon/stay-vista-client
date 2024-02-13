@@ -4,6 +4,8 @@ import About from './About';
 import Favorite from './Favorite';
 import Services from './Services';
 import Gallery from './Gallery';
+import Blogs from './Blogs';
+import Reviews from './Reviews';
 
 
 const MainHome = () => {
@@ -18,6 +20,8 @@ const MainHome = () => {
             <Favorite />
             <Services />
             <Gallery />
+            <Blogs />
+            <Reviews />
         </div>
     );
 };
