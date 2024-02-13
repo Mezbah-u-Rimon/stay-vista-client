@@ -6,6 +6,7 @@ import Services from './Services';
 import Gallery from './Gallery';
 import Blogs from './Blogs';
 import Reviews from './Reviews';
+import Footer from './Footer';
 
 
 const MainHome = () => {
@@ -22,6 +23,7 @@ const MainHome = () => {
             <Gallery />
             <Blogs />
             <Reviews />
+            <Footer />
         </div>
     );
 };
