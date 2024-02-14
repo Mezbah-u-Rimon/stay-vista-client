@@ -76,6 +76,12 @@ const MenuDropdown = () => {
             >
               Home
             </Link>
+            <Link
+              to='/home'
+              className='block md:hidden px-4 py-3 hover:bg-neutral-100 transition font-semibold'
+            >
+              All Room
+            </Link>
             <hr />
 
             {user ? (<>

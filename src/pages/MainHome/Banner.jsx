@@ -192,9 +192,6 @@ const Banner = () => {
                         </form>
                     </div>
                 </div>
-
-
-
             </Swiper>
         </div>
     );
